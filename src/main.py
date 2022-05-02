@@ -1,13 +1,13 @@
-from inspect import getargs
-from typing import get_args
+from sys import argv
+from arguments import checkArguments, generatePlayers
 from game import Game
 from player import Player, PLAYER_TYPE_AI, PLAYER_TYPE_REAL
 
 def main():
-    player1 = Player(PLAYER_TYPE_REAL, 'Kylian')
-    player2 = Player(PLAYER_TYPE_REAL, 'Coco')
-    game = Game(player1, player2)
-    print(game.checkWin(player1))
+    if checkArguments(argv) == 84:
+        return 84;
+    players = generatePlayers(argv)
+    # game = Game(players[0], players[1]);
     return 0;
 
 if __name__ == "__main__":
