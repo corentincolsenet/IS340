@@ -1,9 +1,12 @@
+from tarfile import BLOCKSIZE
 from player import Player
+import pygame as pygame
 import random
 
 DEFAULT_ROWS = 3
 DEFAULT_COLUMNS = 3
 DEFAULT_GRID_CHARACTER = 'FREE'
+BLOCKSIZE = 200
 
 class Game:
     # Define the number of rows on the grid
@@ -20,16 +23,42 @@ class Game:
 
     # Second player    
     player_2 = {}
+    
+    screen = {}
+    
+    clock = {}
 
     def __init__(self, player_1, player_2):
         self.rows = DEFAULT_ROWS
         self.columns = DEFAULT_COLUMNS
         self.grid = list()
+        
         self.player_1 = player_1
         self.player_2 = player_2
         self.player_1.setCharacter('O')
         self.player_2.setCharacter('X')
         self.initGrid()
+        self.screen = pygame.display.set_mode((1000, 1000))
+        self.clock = pygame.time.Clock()
+        self.test()
+    
+    def test(self):
+        pygame.init()
+        self.screen.fill((245, 245, 220))
+
+        while True:
+            self.drawGrid()
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    #sys.exit()
+            pygame.display.update()
+    
+    def drawGrid(self):
+        for x in range(0, self.columns, BLOCKSIZE):
+            for y in range(0, self.rows, BLOCKSIZE):
+                rect = pygame.Rect(x, y, BLOCKSIZE, BLOCKSIZE)
+                pygame.draw.rect(self.screen, (0, 0, 0), rect, 1)
     
     # Init grid and put the DEFAULT_GRID_CHARACTER for each position
     def initGrid(self):
