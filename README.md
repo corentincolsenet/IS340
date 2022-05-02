@@ -39,6 +39,10 @@ pip3 install python3
 ```
 pip3 install pygame
 ```
+* numpy
+```
+pip3 install numpy
+```
 
 ## RUNNING TIC TAC TOE:
 ```
