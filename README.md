@@ -1,5 +1,5 @@
 # TIC TAC TOE GAME
-IS340 Python Project
+IS340 Python Final Project
 
 ## OBJECTIVE:
 For the IS340 group project, we chose to develop a Tic Tac Toe game using python with the Pygame library. The main goal is to develop and implement a program that pits two players against each other in the game of Tic Tac Toe.
