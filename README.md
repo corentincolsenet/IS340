@@ -27,7 +27,10 @@ Player 2 win:
 ![player_2_win](/images/player-two-win.png)
 
 * If no one can create a straight line with their own mark and all the positions on the board are occupied, then the game ends in a draw/tie.
+
 ![tie](/images/tie.png)
+
+To restart the game, press "r" on your keyboard. To exit the game, press "q" on your keyboard or close the window.
 
 ## PREREQUISITES:
 The following points are required to make the game runnable:
