@@ -19,7 +19,15 @@ Player 1 and 2 take turns making moves with Player 1 playing mark “X” and Pl
 
 A player marks any of the 3x3 squares with his mark (“X” or “O”) and their aim is to create a straight line horizontally, vertically or diagonally with two intensions:
 * One of the players gets three of his/her marks in a row (vertically, horizontally, or diagonally) i.e. that player wins the game.
+
+Player 1 win:
+![player_1_win](/images/player-one-win.png)
+
+Player 2 win:
+![player_2_win](/images/player-two-win.png)
+
 * If no one can create a straight line with their own mark and all the positions on the board are occupied, then the game ends in a draw/tie.
+![tie](/images/tie.png)
 
 ## PREREQUISITES:
 The following points are required to make the game runnable:
