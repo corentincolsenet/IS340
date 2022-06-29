@@ -70,4 +70,3 @@ python3 main.py
 * [Corentin Colsenet] (https://github.com/corentincolsenet)
 * [Kylian Maugue] (https://github.com/kmaugue)
 * [Léo Henneville] (https://github.com/LeoHnvl)
-* [Alan Vong] (https://github.com/vongu)
